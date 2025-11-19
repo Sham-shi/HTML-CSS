@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            table {
+                border: solid blue;
+                color: yellow;
+                margin: 20px;
+                background-color: blue;
+            }
+            td {
+                border: 2px solid white;
+                outline: 1px solid white;
+                outline-offset: -4px;
+                background-color: blue;
+                text-align: center;
+                padding: 3px;
+            }
+            li.red {
+                color: red;
+            }
+            li.blue {
+                color: blue;
+            }
+            li.yellow {
+                color: yellow;
+            }
+            li.green {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+       <div style="background-color: lightblue; padding: 5px; width: fit-content">
+        <table>
+           <tr>
+            <td>Первый</td>
+            <td>Второй</td>
+            <td>Третий</td>
+           </tr>
+
+           <tr>
+            <td colspan="2">Первый</td>
+            <td>Третий</td>
+           </tr>
+
+           <tr>
+            <td colspan="3">Первый</td>
+           </tr>
+        </table>
+       </div>
+
+        <div>
+            <ul>
+                <li class="red">Красный</li>
+                <li class="blue">Синий</li>
+                <li class="green">Зеленый</li>
+                <li class="yellow">Желтый</li>
+            </ul>
+        </div>
+    </body>
+</html>
