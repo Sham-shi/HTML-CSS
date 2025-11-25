@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            nav {
+                font-family: monospace;
+            }
+            .menu {
+                list-style: none;
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+            }
+            .menu a {
+                display: block;
+                padding: 15px 20px;
+                color: green;
+                text-decoration: none;
+                transition: background 0.3s;
+                border: 1px solid green;
+                width: 80px;
+            }
+            .menu li {
+                position: relative;
+                background-color: lightblue;
+                text-align: center;
+            }
+            .menu li:hover > a {
+                background-color: green;
+                color: lightgreen;
+                border: 1px solid lightgreen;
+            }
+            .submenu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                list-style: none;
+                padding: 0;
+                box-shadow: 4px 4px 4px blue;
+            }
+            .submenu .submenu {
+                top: 0;
+                left: 100%;
+            }
+            .menu li:hover > .submenu {
+                display: block;
+            }
+            .drop-down-menu {
+                background-color: burlywood;
+                padding: 20px;
+                max-width: 500px;
+                align-items: center;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+      <div class="drop-down-menu">
+          <nav>
+               <ul class="menu">
+                   <li>
+                       <a href="">Главная</a>
+                    </li>
+                   <li>
+                       <a href="">Категории</a>
+                       <ul class="submenu">
+                           <li>
+                               <a href="">Мужчина</a>
+                           </li>
+                           <li>
+                               <a href="">Женщина</a>
+                               <ul class="submenu">
+                                   <li>
+                                       <a href="">Платья</a>
+                                       <ul class="submenu">
+                                           <li><a href="">Бальное</a></li>
+                                           <li><a href="">Греческое</a></li>
+                                           <li><a href="">Футляр</a></li>
+                                           <li><a href="">Тюльпан</a></li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a href="">Брюки</a>
+                                   </li>
+                                   <li>
+                                       <a href="">Обувь</a>
+                                   </li>
+                               </ul>
+                           </li>
+                           <li>
+                               <a href="">Дети</a>
+                           </li>
+                       </ul>
+                    </li>
+                   <li>
+                       <a href="">О нас</a>
+                    </li>
+                   <li>
+                       <a href="">Контакты</a>
+                    </li>
+               </ul>
+           </nav>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque aspernatur, voluptatem, nihil delectus non quis cupiditate magnam quisquam placeat excepturi debitis aliquam totam veritatis quas exercitationem saepe in fuga error ipsam soluta provident. Ea earum, officia ex. Dicta voluptatem, temporibus cupiditate mollitia suscipit nam assumenda accusantium consequuntur quo. Deserunt enim, a laudantium velit amet quo alias cum, doloremque reprehenderit facere eum vitae eligendi aperiam iusto delectus ullam. Aspernatur, ullam, unde.</p>
+      </div>
+
+       <div>
+           <header>
+               <nav>
+
+               </nav>
+           </header>
+       </div>
+    </body>
+</html>

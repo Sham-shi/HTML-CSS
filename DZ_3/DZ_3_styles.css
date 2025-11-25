@@ -1,0 +1,125 @@
+nav.menu {
+    padding: 5px;
+    text-align: center;
+    font-family: DejaVu Sans Mono, monospace;
+    color: aliceblue;
+}
+a {
+    color: aliceblue;
+    padding: 5px;
+    margin: 30px;
+    text-decoration-line: none;
+    font-family: 'Comic Sans MS', 'Monaco', monospace;
+}
+body {
+    background-image: url(Images/body.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* по горизонтали */
+    gap: 20px;
+}
+div.tag {
+    background-color: lightgrey;
+    border: 4px groove;
+    border-radius: 4px;
+    margin: 30px;
+    padding: 10px;
+    width: fit-content;
+}
+div.seasons {
+    background-image: url(Images/seasons.jpg);
+    border: 4px groove;
+    border-radius: 4px;
+    margin: 30px;
+    padding: 20px;
+    width: 700px;
+    height: 530px;
+}
+div.contents {
+    background-image: url(Images/contents.jpg);
+    border: 4px groove;
+    border-radius: 4px;
+    margin: 30px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+div.fridge {
+    background-image: url(Images/orig.jpg);
+    border: 4px groove;
+    border-radius: 4px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+span.grey {
+    color: grey;
+}
+span.blue {
+    color: blue;
+}
+li.for-seasons::marker {
+    content: ">";
+    font-weight: 900;
+    font-size: 20px;
+}
+li.winter::marker {
+    content: "❄ ";
+}
+li.winter {
+    color: blue;
+    text-shadow: 2px 2px 4px blue;
+}
+li.spring::marker {
+    content: "🍃 ";
+}
+li.spring {
+    color: green;
+    text-shadow: 2px 2px 4px green;
+}
+li.summer::marker {
+    content: "☀ ";
+}
+li.summer {
+    color: yellow;
+    text-shadow: 2px 2px 4px orange;
+}
+li.autumn::marker {
+    content: "🍂 ";
+}
+li.autumn {
+    color: red;
+    text-shadow: 2px 2px 4px red;
+}
+ol.upper-roman {
+    list-style-type: upper-roman;
+    color: darkcyan;
+}
+ol.cyrilic {
+    list-style-type: none;
+    padding-left: 1em;
+    color: blueviolet
+}
+ol.decimal {
+    color: brown
+}
+.cyrilic li:nth-child(1)::before { content: 'а. '; }
+.cyrilic li:nth-child(2)::before { content: 'б. '; }
+td {
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: inset -2px -2px 2px;
+    text-shadow: 2px 2px 2px;
+    width: 200px;
+}
+hr {
+    height: 2px;
+    background-color: blue;
+    margin-top: 40px;
+}
+.fridge-h3 {
+    color: #3008b4;
+    font-size: 30px;
+    font-family: Jazz LET, fantasy;
+}
