@@ -1,0 +1,51 @@
+nav {
+    font-family: monospace;
+}
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: green;
+    text-decoration: none;
+    transition: background 0.3s;
+    border: 1px solid green;
+    width: 80px;
+}
+.menu li {
+    position: relative;
+    background-color: lightblue;
+    text-align: center;
+}
+.menu li:hover > a {
+    background-color: green;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    box-shadow: 4px 4px 4px blue;
+}
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+.menu li:hover > .submenu {
+    display: block;
+}
+.drop-down-menu {
+    background-color: burlywood;
+    padding: 20px;
+    max-width: 500px;
+    align-items: center;
+}
+
+
+
