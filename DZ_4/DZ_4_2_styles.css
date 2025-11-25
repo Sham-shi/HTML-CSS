@@ -1,3 +1,12 @@
+.background {
+    width: 1000px;
+    margin: 0 auto;
+    background-image: url(Images/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 body {
     background-image: url(Images/books.jpg);
     background-size: cover;
@@ -50,7 +59,7 @@ body {
     width: 1000px;
     margin: 0 auto;
     top: 0;
-    padding: 20px;
+    padding: 10px;
 }
 .main-content {
     display: flex;
