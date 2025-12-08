@@ -1,0 +1,78 @@
+/* Основной Grid футера */
+.footer-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Логотип */
+.footer-logo .gp-icon {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+.footer-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* ← центрирует содержимое по горизонтали */
+
+}
+/* Центр: две колонки ссылок */
+.footer-nav-columns {
+  display: flex;
+  gap: 40px; /* расстояние между колонками */
+}
+
+.footer-nav-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-nav-columns a {
+  font-size: 0.95rem;
+  color: #9d7fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-nav-columns a:hover {
+  color: #c45454;
+}
+/* Соцсети справа — вертикальная колонка */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+/* Иконки уже определены у вас — оставляем как есть */
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s ease;
+}
+.icon1 {
+  background-image: url('images/icons/Icon_RUTUBE_dark_mono.png');
+}
+.icon1:hover {
+  background-image: url('images/icons/Icon_RUTUBE_dark_color.png');
+}
+.icon2 {
+  background-image: url('images/icons/telegram_black_logo_icon_147073.png');
+}
+.icon2:hover {
+  background-image: url('images/icons/telegram_logo_icon_147228.png');
+}
+.icon3 {
+  background-image: url('images/icons/vk_logo_icon_144752.png');
+}
+.icon3:hover {
+  background-image: url('images/icons/vk_logo_icon_147212.png');
+}

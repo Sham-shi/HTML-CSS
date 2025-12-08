@@ -1,0 +1,18 @@
+.main { width: 100%; }
+.main-about {
+    background-blend-mode: multiply;
+    background: rgba(67, 84, 98, 70%) url(/DZ_8_Ekzamen/images/fitness3.jpg) center / cover no-repeat;
+    min-height: 90vh;
+}
+.main-about h2{
+    padding: 1%;
+    margin-top: 20px;
+    text-shadow: 5px 5px 5px #000000;
+    color: darkgrey;
+    text-align: center;
+}
+footer {
+  background-color: #006c6c;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}

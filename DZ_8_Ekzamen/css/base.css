@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальные настройки */
+html {
+  font-size: 16px;
+  scroll-padding-top: 10vh;
+}
+body {
+  font-family: Arial, Gill Sans, sans-serif;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: azure;
+}
+.gp-icon {
+    width: 120px;
+    height: 100%;
+    align-self: center;
+    object-fit: contain; /* для логотипа - чтобы не искажался */
+}

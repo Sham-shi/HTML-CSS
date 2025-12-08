@@ -1,0 +1,125 @@
+/* Стили для header*/
+header {
+    background: rgba(67, 84, 98, 50%) url(/DZ_8_Ekzamen/images/fitness5.jpg) center / cover no-repeat;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    display: grid;
+    place-items: center;
+}
+/* Grid для контента шапки */
+header .container.column {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-content: center;
+    gap: 15px;
+    padding-top: 5%;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #5c2aff;
+    text-shadow: 5px 5px 5px blue;
+    background-color: rgba(2, 1, 10, 70%);
+    margin-top: 10%;
+    border-radius: 10px;
+}
+header h1:first-child {
+    animation: moveleft .8s ease-out .3s backwards;
+}
+header h1:nth-child(2) {
+    animation: moveright .8s ease-out 1.2s backwards;
+}
+header h1:nth-child(3) {
+    opacity: 0;
+    animation: fadeIn 2s ease-out 2.0s forwards;
+}
+header h3 {
+    color: #9191ff;
+    background-color: rgb(2, 1, 10, 70%);
+    opacity: 0;
+    animation: fadeIn 2s ease-out 3.0s forwards;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10%;
+}
+@keyframes fadeIn {                /* Анимация для заголовка */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes moveleft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes moveright {
+    from {
+        transform: translateX(+100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.css-arrow {                /* CSS стрелка */
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 30px auto 0;
+    position: relative;
+    text-decoration: none;
+    opacity: 0;
+    animation: arrowBounce 2s ease-out infinite backwards 3s;
+    scroll-behavior: smooth;
+}
+.css-arrow::before,
+.css-arrow::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #9191ff;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+}
+.css-arrow::before {
+    transform: translate(-12px, -50%) rotate(45deg);
+}
+.css-arrow::after {
+    transform: translate(0, -50%) rotate(-45deg);
+}
+.css-arrow:hover::before,
+.css-arrow:hover::after {
+    background-color: #b10303;
+}
+@keyframes arrowBounce {            /* Анимация стрелки */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

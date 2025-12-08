@@ -1,0 +1,95 @@
+/* From Uiverse.io by joe-watson-sbf */
+#trainers {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgb(99 102 241);
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.flip-card-front {
+  color: #ff0000;
+  text-shadow: 2px 2px 2px #000000;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flip-card:first-child .flip-card-front {
+    background: rgba(67, 84, 98, 50%) url(/DZ_8_Ekzamen/images/man1_1.jpg) center / cover no-repeat;
+}
+.flip-card:nth-child(2) .flip-card-front {
+    background: rgba(67, 84, 98, 50%) url(/DZ_8_Ekzamen/images/man2_1.png) center / cover no-repeat;
+}
+.flip-card:nth-child(3) .flip-card-front {
+    background: rgba(67, 84, 98, 50%) url(/DZ_8_Ekzamen/images/man3_1.jpg) center / cover no-repeat;
+}
+.flip-card:nth-child(4) .flip-card-front {
+    background: rgba(67, 84, 98, 50%) url(/DZ_8_Ekzamen/images/woman3_1.jpg) center / cover no-repeat;
+}
+.flip-card:nth-child(5) .flip-card-front {
+    background: rgba(67, 84, 98, 50%) url(/DZ_8_Ekzamen/images/woman4_1.jpg) center / cover no-repeat;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(131, 110, 239) 30%, #3d0267 88%, #060679);
+  color: black;
+  text-shadow: 3px 2px 3px #810404;
+  transform: rotateY(180deg);
+  justify-content: center;
+}
+.icon1 {
+  background-image: url('/DZ_8_Ekzamen/images/icons/Icon_RUTUBE_dark_mono.png');
+}
+.icon1:hover {
+  background-image: url('/DZ_8_Ekzamen/images/icons/Icon_RUTUBE_dark_color.png');
+}
+.icon2 {
+  background-image: url('/DZ_8_Ekzamen/images/icons/telegram_black_logo_icon_147073.png');
+}
+.icon2:hover {
+  background-image: url('/DZ_8_Ekzamen/images/icons/telegram_logo_icon_147228.png');
+}
+.icon3 {
+  background-image: url('/DZ_8_Ekzamen/images/icons/vk_logo_icon_144752.png');
+}
+.icon3:hover {
+  background-image: url('/DZ_8_Ekzamen/images/icons/vk_logo_icon_147212.png');
+}

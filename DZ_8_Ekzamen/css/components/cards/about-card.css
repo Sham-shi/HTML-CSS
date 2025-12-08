@@ -1,0 +1,54 @@
+/* 1. Ряд с двумя большими карточками (3-й элемент в .container.column) */
+.main-about .container.column > .row:nth-child(3) {
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
+    gap: 20px;
+}
+.main-about-card-big {
+    height: 250px;
+    padding: 1%;
+    /* В 2-колоночной сетке занимает 1 колонку (50%) */
+}
+
+/* 2. Ряд с четырьмя маленькими карточками (4-й элемент в .container.column) */
+.main-about .container.column > .row:nth-child(4) {
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 20px;
+}
+.main-about-card-small {
+    height: 250px;
+    padding: 1%;
+    align-content: center;
+    /* В 4-колоночной сетке занимает 1 колонку (25%) */
+}
+
+.main-about-card-base {
+    color: rgba(169, 169, 169);
+    background: rgba(67, 84, 98, 70%) center / cover no-repeat;
+    background-blend-mode: multiply;
+    line-height: 24px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px #300000;
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 5px #570000;
+    align-content: center;
+    padding: 15px;
+}
+.main-about-card-big:first-child {
+    background-image: url(/DZ_8_Ekzamen/images/man4_1.jpg);
+}
+.main-about-card-big:nth-child(2) {
+    background-image: url(/DZ_8_Ekzamen/images/woman2_1.jpg);
+}
+.main-about-card-small:first-child {
+    background-image: url(/DZ_8_Ekzamen/images/fitness2.jpg);
+}
+.main-about-card-small:nth-child(2) {
+    background-image: url(/DZ_8_Ekzamen/images/kardio-zal_1.jpg);
+}
+.main-about-card-small:nth-child(3) {
+    background-image: url(/DZ_8_Ekzamen/images/mans2.jpg);
+}
+.main-about-card-small:nth-child(4) {
+    background-image: url(/DZ_8_Ekzamen/images/mans1.jpg);
+}
