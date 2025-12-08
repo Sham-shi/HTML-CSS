@@ -1,8 +1,8 @@
 /* --- ТАБЛЕТЫ — до 992px (включительно) --- */
 @media (max-width: 992px) {
-  .row {
-    justify-items: center; /* центрирует элементы по горизонтали */
-  }
+    .row {
+        justify-items: center; /* центрирует элементы по горизонтали */
+    }
     .gp-icon {
         width: 90px;
     }
@@ -38,6 +38,10 @@
         grid-template-columns: repeat(4, auto);
         gap: 10px;
         font-size: 1.2rem;
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
     }
 }
 
